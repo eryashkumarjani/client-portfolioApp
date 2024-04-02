@@ -6,7 +6,7 @@
   border-radius: 20px;
   width: 80%;
   height: 75%;
-  padding: 0 2rem;
+  padding: 1rem;
 
   .About-Logo {
     width: 230px;
@@ -23,13 +23,13 @@
 
 
 // Media query for small devices (mobile)
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .About {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 70%;
 
     .About-Logo {
       width: 100px;

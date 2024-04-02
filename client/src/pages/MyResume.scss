@@ -7,6 +7,7 @@
   border-radius: 20px;
   width: 80%;
   height: 75%;
+  padding: 1rem;
 
   .Resume-Text {
     padding: 1rem;
@@ -15,7 +16,7 @@
 
 
 // Media query for small devices (mobile)
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
   .Resume {
     display: flex;
     flex-direction: column;
@@ -23,8 +24,8 @@
     background: #f1f1e6d5;
     color: black;
     border-radius: 20px;
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 70%;
 
     .Resume-Logo {
       width: 100px;
