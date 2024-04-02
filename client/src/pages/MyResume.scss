@@ -1,0 +1,45 @@
+.Resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed white;
+  border-radius: 20px;
+  border-radius: 20px;
+  width: 80%;
+  height: 75%;
+
+  .Resume-Text {
+    padding: 1rem;
+  }
+}
+
+
+// Media query for small devices (mobile)
+@media only screen and (max-width: 414px) {
+  .Resume {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #f1f1e6d5;
+    color: black;
+    border-radius: 20px;
+    width: 90%;
+    height: 80%;
+
+    .Resume-Logo {
+      width: 100px;
+      height: 100px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .Resume-Text {
+      padding: 0.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

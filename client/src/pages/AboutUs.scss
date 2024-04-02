@@ -1,0 +1,48 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed white;
+  border-radius: 20px;
+  width: 80%;
+  height: 75%;
+  padding: 0 2rem;
+
+  .About-Logo {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px dashed white;
+  }
+
+  .About-Text {
+    padding: 1rem;
+  }
+}
+
+
+// Media query for small devices (mobile)
+@media only screen and (max-width: 414px) {
+  .About {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: 80%;
+
+    .About-Logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .About-Text {
+      padding: 0.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
