@@ -1,0 +1,92 @@
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed white;
+  border-radius: 20px;
+  border-radius: 20px;
+  width: 80%;
+  height: 75%;
+  padding: 1rem;
+
+  .Contact-Logo {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px dashed white;
+  }
+
+  .Contact-Text {
+    width: calc(100% - 550px);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      margin: 0 0.9rem;
+    }
+
+    hr {
+      margin: 2rem 0;
+    }
+
+    .Contact-Description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        width: 33.3%;
+        padding: 0.5rem 0;
+        transition: 0.6s ease-in-out;
+
+        &:hover {
+          background-color: #ffffff1c;
+          color: #A6CAEA;
+          border-radius: 3px;
+        }
+
+        i {
+          font-size: xxx-large;
+        }
+
+        h4 {
+          margin: 0 0.9rem;
+        }
+
+        &:hover {
+          box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        }
+      }
+    }
+  }
+}
+
+
+// Media query for small devices (mobile)
+@media only screen and (max-width: 414px) {
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 70%;
+
+    .Contact-Logo {
+      width: 100px;
+      height: 100px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .Contact-Text {
+      padding: 0.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

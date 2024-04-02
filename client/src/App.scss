@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .App-Logo {
+    width: 220px;
+    height: 220px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .App-Text {
+    padding: 1rem;
+  }
+}
+
+
+// Media query for small devices (mobile)
+@media only screen and (max-width: 414px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+    .App-Logo {
+      width: 100px;
+      height: 100px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .App-Text {
+      padding: 0.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

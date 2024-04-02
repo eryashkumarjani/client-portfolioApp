@@ -1,0 +1,50 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .Home-Logo {
+    width: 220px;
+    height: 220px;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .Home-Text {
+    padding: 1rem;
+
+    p {
+      color: #E79C25;
+      font-weight: bold;
+    }
+  }
+}
+
+
+// Media query for small devices (mobile)
+@media only screen and (max-width: 414px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+    .Home-Logo {
+      width: 100px;
+      height: 100px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+
+    .Home-Text {
+      padding: 0.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
