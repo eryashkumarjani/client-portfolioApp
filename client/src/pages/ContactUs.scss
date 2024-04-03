@@ -24,7 +24,9 @@
     width: 100%;
 
     h1 {
-      margin: 0 0.9rem;
+      margin-bottom: 2rem;
+      background: #1c495f;
+
     }
 
     hr {
@@ -35,6 +37,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .Social-Icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       div {
         width: 33.3%;
@@ -52,7 +61,7 @@
         }
 
         h4 {
-          margin: 0 0.9rem;
+          margin: 0.5rem 0.9rem;
         }
 
         &:hover {

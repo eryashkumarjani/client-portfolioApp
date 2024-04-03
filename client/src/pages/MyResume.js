@@ -11,11 +11,13 @@ function MyResume() {
       exit={{ y: "-50px", opacity: 0, transition: { duration: 0.25, delay: 0, ease: "easeInOut" } }}>
 
       <div className='Resume-container'>
-        <h1>My Resume </h1>
+        <div className='Resume-Heading'>
+          <img src={process.env.PUBLIC_URL + '/myresume.png'} className='Home-Logo' alt='logo' /> <h1>My Resume </h1>
+        </div>
+        <hr></hr>
         <div className='Resume-row'>
           <div className='Resume-Profile'>
             <h3>Profile</h3>
-            <hr></hr>
             <p>I am a qualified and professional Front-end developer with 6+ years of
               experience. Motivated and enthusiastic MERN stack developer seeking
               an entry-level position to utilize my skills in developing dynamic web
@@ -26,7 +28,6 @@ function MyResume() {
           </div>
           <div className='Resume-Education'>
             <h3>Education</h3>
-            <hr></hr>
             <ul>
               <li>
                 DIPLOMA IN ENGINEERING
@@ -52,35 +53,74 @@ function MyResume() {
           </div>
         </div>
         <div className='Resume-Skills'>
-          <h3>Skills - Corousal will be here...</h3>
-          <hr></hr>
-          <p>
-            1.Git,
-            2.Figma,
-            3.Html5,
-            4.Css3,
-            5.JavaScript,
-            6.Bootstrap5,
-            7.Scss,
-            8.Angular,
-            9.Tailwind css,
-            10.React js,
-            11.Ant Design,
-            12.Node js,
-            13.MongoDB,
-            14.Firebase.
-          </p>
+          <h3>Skills</h3>
+          <div className='Resume-Skills-Container'>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/git.svg'} className='Home-Logo' alt='logo' />
+              <label>Git</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/figma.svg'} className='Home-Logo' alt='logo' />
+              <label>Figma</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/html5.svg'} className='Home-Logo' alt='logo' />
+              <label>Html5</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/css3.svg'} className='Home-Logo' alt='logo' />
+              <label>Css3</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/javascript.svg'} className='Home-Logo' alt='logo' />
+              <label>JavaScript</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/bootstrap.svg'} className='Home-Logo' alt='logo' />
+              <label>Bootstrap5</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/scss.svg'} className='Home-Logo' alt='logo' />
+              <label>Scss</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/angular.svg'} className='Home-Logo' alt='logo' />
+              <label>Angular</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/tailwindcss.svg'} className='Home-Logo' alt='logo' />
+              <label>Tailwind css</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/reactjs.svg'} className='Home-Logo' alt='logo' />
+              <label>React js</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/antdesign.svg'} className='Home-Logo' alt='logo' />
+              <label>Ant Design</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/nodejs.svg'} className='Home-Logo' alt='logo' />
+              <label>Node js</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/mongodb.svg'} className='Home-Logo' alt='logo' />
+              <label>MongoDB</label>
+            </div>
+            <div className='Resume-Skills-Content'>
+              <img src={process.env.PUBLIC_URL + '/firebase.svg'} className='Home-Logo' alt='logo' />
+              <label>Firebase</label>
+            </div>
+          </div>
         </div>
         <div className='Resume-row'>
           <div className='Resume-Certificate'>
             <h3>Certificate</h3>
-            <hr></hr>
             <p>Microsoft Certified :-
               Azure Fundamentals (AZ-900)</p>
           </div>
           <div className='Resume-Experience'>
             <h3>Experience</h3>
-            <hr></hr>
             <ul>
               <li>STUDENT TRAINEE - MERN STACK DEVELOPER</li>
               <li>Pesto Tech</li>
@@ -111,7 +151,6 @@ function MyResume() {
                 </ul>
               </li>
             </ul>
-            <hr></hr>
             <ul>
               <li>FRONT END DEVELOPER - REACT</li>
               <li>Wipro</li>
@@ -181,7 +220,6 @@ function MyResume() {
                 </li>
               </ul>
             </ul>
-            <hr></hr>
             <ul>
               <li>FRONT END DEVELOPER - ANGULAR</li>
               <li>Expinn Technologies</li>
@@ -250,7 +288,6 @@ function MyResume() {
                 </li>
               </ul>
             </ul>
-            <hr></hr>
             <ul>
               <li>FRONT END DEVELOPER - WEB DEVELOPMENT</li>
               <li>Infiniteworx Omnichannel Pvt. Ltd.</li>
@@ -280,11 +317,14 @@ function MyResume() {
             </ul>
           </div>
         </div>
+        <hr></hr>
         <div className='Resume-Download'>
-          <h3>Download</h3>
+          <a href={process.env.PUBLIC_URL + '/resume2024.pdf'} download="resume2024">
+            <button className='Button-Download'>Download</button>
+          </a>
         </div>
       </div>
-    </motion.div>
+    </motion.div >
   );
 }
 
