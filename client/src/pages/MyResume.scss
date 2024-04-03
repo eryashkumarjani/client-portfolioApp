@@ -7,20 +7,79 @@
   width: 80%;
   height: 75%;
   padding: 1rem;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   .Resume-container {
     padding: 1rem;
     height: 100%;
+    width: 100%;
+
+    .Resume-Heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
 
     h1 {
       text-align: center;
     }
 
+    .Resume-Skills {
+      overflow: hidden;
+
+      h3 {
+        background: #1c495f;
+      }
+
+      .Resume-Skills-Container {
+        display: flex;
+        animation: swipe 50000ms linear infinite;
+
+        .Resume-Skills-Content {
+          margin: 0 0.6rem;
+          padding: 0.5rem;
+          text-align: center;
+
+          img {
+            width: 55px;
+            height: 55px;
+          }
+
+          label {
+            display: block;
+            width: 90px;
+          }
+        }
+
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+
+      @keyframes swipe {
+        0% {
+          transform: translateX(0);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    }
+
     .Resume-row {
       display: flex;
       justify-content: space-around;
-      border: 1px solid white;
+
+      h3 {
+        background: #1c495f;
+      }
 
       .Resume-Profile,
       .Resume-Education,
@@ -49,13 +108,97 @@
     .Resume-Download {
       width: 100%;
       text-align: center;
+
+      .Button-Download {
+        display: inline-block;
+        position: relative;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-size: 0.9em;
+        text-align: center;
+        text-indent: 15px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin: 1rem 2rem;
+      }
+
+      .Button-Download:hover {
+        color: #4CC713;
+        border: 1px solid #4CC713;
+      }
+
+      .Button-Download:before,
+      .Button-Download:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 52%;
+      }
+
+      /* Download box shape  */
+      .Button-Download:before {
+        width: 10px;
+        height: 2px;
+        border-style: solid;
+        border-width: 0 2px 2px;
+      }
+
+      /* Download arrow shape */
+      .Button-Download:after {
+        width: 0;
+        height: 0;
+        margin-left: 3px;
+        margin-top: -7px;
+        border-style: solid;
+        border-width: 4px 4px 0 4px;
+        border-color: transparent;
+        border-top-color: inherit;
+
+        animation: downloadArrow 2s linear infinite;
+        animation-play-state: paused;
+      }
+
+      .Button-Download:hover:before {
+        border-color: #4CC713;
+      }
+
+      .Button-Download:hover:after {
+        border-top-color: #4CC713;
+        animation-play-state: running;
+      }
+
+      /* keyframes for the download icon anim */
+      @keyframes downloadArrow {
+
+        /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+        0% {
+          margin-top: -7px;
+          opacity: 1;
+        }
+
+        0.001% {
+          margin-top: -15px;
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          margin-top: 0;
+          opacity: 0;
+        }
+      }
     }
   }
 }
 
 
 // Media query for small devices (mobile)
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .Resume {
     display: flex;
     flex-direction: column;

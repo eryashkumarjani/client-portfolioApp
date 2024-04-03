@@ -18,19 +18,30 @@ function ContactUs() {
         transition={{ duration: 0.75, delay: 0, ease: "easeInOut" }}
         exit={{ y: "-50px", opacity: 0 }}>
         <h1>Get in touch </h1>
-        <hr />
         <div className='Contact-Description'>
-          <div className='Gmail'>
-            <i class="fa-regular fa-envelope"></i>
-            <h4> Gmail </h4>
+          <div className='Gmail Social-Icon'>
+            <a href="mailto:eryashkumarjani@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              <h4>
+                Gmail
+              </h4>
+            </a>
           </div>
-          <div className='LinkedIn'>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <h4> LinkedIn </h4>
+          <div className='LinkedIn Social-Icon'>
+            <a href="https://www.linkedin.com/in/er-yashkumar-jani-064072299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <h4>
+                LinkedIn
+              </h4>
+            </a>
           </div>
-          <div className='WhatsApp'>
-            <i class="fa-brands fa-whatsapp"></i>
-            <h4> WhatsApp</h4>
+          <div className='WhatsApp Social-Icon'>
+            <a href="https://wa.me/8320870517">
+              <i class="fa-brands fa-whatsapp"></i>
+              <h4>
+                WhatsApp
+              </h4>
+            </a>
           </div>
         </div>
       </div>

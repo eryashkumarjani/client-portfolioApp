@@ -17,7 +17,7 @@ function AboutUs() {
         <p>
           Hey there, I'm Yashkumar Jani, a product Developer based in Bharat with a passion for creating seamless and delightful user experiences. I especially enjoy working on developing operations and systems that help bring order to complexity.
 
-          When I'm not developing, you can find me on Instagram.</p>
+          When I'm not developing, you can find me on <a href="https://www.instagram.com/eryashkumarjani?igsh=Y2E2cnJ0MjJubzFs&utm_source=qr"> "Instagram"</a>.</p>
 
 
       </div>
