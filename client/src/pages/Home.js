@@ -3,7 +3,7 @@ import transition from '../transition';
 import { motion } from 'framer-motion';
 
 function Home() {
-  const initial = { y: "50px", opacity: 0 };
+  const initial = { y: "60px", opacity: 0 };
   const animate = { y: 0, opacity: 1 };
   const transition = { duration: 0.75, delay: 0, ease: "easeInOut" };
 
@@ -13,8 +13,8 @@ function Home() {
         initial={initial}
         animate={animate}
         transition={transition}
-        exit={{ y: "-50px", opacity: 0, transition: { duration: 0.25, delay: 0, ease: "easeInOut" } }}
-        src={process.env.PUBLIC_URL + '/eryashkumarjani.JPG'} className='Home-Logo' alt='logo' />
+        exit={{ y: "-60px", opacity: 0, transition: { duration: 0.25, delay: 0, ease: "easeInOut" } }}
+        src={process.env.PUBLIC_URL + '/homeImg.Jpeg'} className='Home-Logo' alt='logo' />
 
       <motion.div className='Home-Text'
         initial={initial}

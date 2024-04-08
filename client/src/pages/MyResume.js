@@ -5,10 +5,10 @@ import './MyResume.scss';
 function MyResume() {
   return (
     <motion.div id="scrollbar" className="Resume"
-      initial={{ y: "50px", opacity: 0 }}
+      initial={{ y: "60px", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.75, delay: 0, ease: "easeInOut" }}
-      exit={{ y: "-50px", opacity: 0, transition: { duration: 0.25, delay: 0, ease: "easeInOut" } }}>
+      exit={{ y: "-60px", opacity: 0, transition: { duration: 0.25, delay: 0, ease: "easeInOut" } }}>
 
       <div className='Resume-container'>
         <div className='Resume-Heading'>
