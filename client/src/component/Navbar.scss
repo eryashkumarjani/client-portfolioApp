@@ -1,12 +1,15 @@
+@use './../variables' as *;
+
 .Navbar {
   position: fixed;
-  background: rgb(255 255 255 / 49%);
+  background: #fffffffc;
   bottom: 3%;
   border-radius: 20px;
   padding: 0.5rem;
+  box-shadow: $box-shadow;
 
   .active {
-    color: black !important;
+    color: $text-color !important;
     transform: scale(1.1);
     font-size: 1.1rem;
     font-weight: bolder;
@@ -14,7 +17,7 @@
 
   .Navbar-Text {
     transition: all .2s ease-in-out;
-    color: black;
+    color: $text-color;
 
     &:hover {
       transform: scale(1.1);

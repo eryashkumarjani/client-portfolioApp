@@ -1,3 +1,5 @@
+@use './../variables' as *;
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 $width: 16px;
@@ -19,7 +21,7 @@ body {
 }
 
 .text {
-  color: black;
+  color: $text-color;
   display: inline-block;
   margin-left: 0.9rem;
   font-weight: bolder;
@@ -39,7 +41,7 @@ body {
     width: $width;
     height: $height;
     border-radius: 50%;
-    background-color: black;
+    background-color: $text-color;
     transform-origin: 50%;
     animation: bounce 500ms alternate infinite ease;
   }
