@@ -1,3 +1,5 @@
+@use './../variables' as *;
+
 .About {
 
   // border: 1px dashed white;
@@ -21,17 +23,17 @@
       border-radius: 50%;
       padding: 1rem;
       border: 5px solid black;
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      box-shadow: $box-shadow-logo;
     }
 
     .About-Text {
       padding: 1rem;
 
       h1 {
-        background: rgb(255 255 255 / 49%);
-        border-radius: 25px;
+        background: $bg-color;
+        border-radius: 15px;
         padding: 0rem 0.5rem;
-        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        box-shadow: $box-shadow;
         text-align: center;
       }
 
