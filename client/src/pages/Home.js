@@ -22,7 +22,7 @@ function Home() {
         transition={transition}
         exit={{ y: "-50px", opacity: 0 }}>
         <h1>Hi, I am Yashkumar Jani </h1>
-        <p> MERN stack developer</p>
+        <p> MERN STACK DEVELOPER </p>
       </motion.div>
     </div>
   );

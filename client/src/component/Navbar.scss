@@ -1,12 +1,12 @@
 .Navbar {
   position: fixed;
-  background: #ffffff1c;
+  background: rgb(255 255 255 / 49%);
   bottom: 3%;
   border-radius: 20px;
   padding: 0.5rem;
 
   .active {
-    color: #A6CAEA !important;
+    color: black !important;
     transform: scale(1.1);
     font-size: 1.1rem;
     font-weight: bolder;
@@ -14,7 +14,7 @@
 
   .Navbar-Text {
     transition: all .2s ease-in-out;
-    color: white;
+    color: black;
 
     &:hover {
       transform: scale(1.1);

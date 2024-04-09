@@ -14,7 +14,6 @@ function MyResume() {
         <div className='Resume-Heading'>
           <img src={process.env.PUBLIC_URL + '/myresume.png'} className='Home-Logo' alt='logo' /> <h1>My Resume </h1>
         </div>
-        <hr></hr>
         <div className='Resume-row'>
           <div className='Resume-Profile'>
             <h3>Profile</h3>
