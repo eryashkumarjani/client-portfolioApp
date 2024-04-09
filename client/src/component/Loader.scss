@@ -19,7 +19,7 @@ body {
 }
 
 .text {
-  color: #A6CAEA;
+  color: black;
   display: inline-block;
   margin-left: 0.9rem;
   font-weight: bolder;
@@ -39,7 +39,7 @@ body {
     width: $width;
     height: $height;
     border-radius: 50%;
-    background-color: #A6CAEA;
+    background-color: black;
     transform-origin: 50%;
     animation: bounce 500ms alternate infinite ease;
   }

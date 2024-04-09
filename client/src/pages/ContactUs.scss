@@ -5,7 +5,7 @@
   // border: 1px dashed white;
   border-radius: 20px;
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   height: 75%;
   padding: 1rem;
 
@@ -14,7 +14,8 @@
     height: 230px;
     border-radius: 50%;
     padding: 1rem;
-    border: 1px solid white;
+    border: 5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
   .Contact-Text {
@@ -25,7 +26,10 @@
 
     h1 {
       margin-bottom: 2rem;
-      background: #1c495f;
+      background: rgb(255 255 255 / 49%);
+      border-radius: 25px;
+      padding: 0rem 0.5rem;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
     }
 
@@ -51,9 +55,9 @@
         transition: 0.6s ease-in-out;
 
         &:hover {
-          background-color: #ffffff1c;
+          background-color: #ffffff51;
           color: #A6CAEA;
-          border-radius: 3px;
+          border-radius: 20px;
         }
 
         i {
@@ -83,15 +87,14 @@
     height: 70%;
 
     .Contact-Logo {
-      width: 100px;
-      height: 100px;
-      padding: 0.5rem;
+      width: 150px;
+      height: 150px;
+      padding: 1rem;
       border-radius: 50%;
-      border: 1px solid white;
     }
 
     .Contact-Text {
-      padding: 0.5rem;
+      padding: 1rem;
 
       h1 {
         font-size: 1.5rem;

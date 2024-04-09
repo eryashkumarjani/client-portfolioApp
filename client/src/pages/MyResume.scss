@@ -4,7 +4,7 @@
   justify-content: center;
   // border: 1px dashed white;
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   height: 75%;
   padding: 1rem;
   overflow-y: scroll;
@@ -19,6 +19,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background: rgb(255 255 255 / 49%);
+      border-radius: 50px;
 
       img {
         width: 55px;
@@ -28,13 +30,16 @@
 
     h1 {
       text-align: center;
+      margin: 0.5rem;
     }
 
     .Resume-Skills {
       overflow: hidden;
 
       h3 {
-        background: #1c495f;
+        background: rgb(255 255 255 / 49%);
+        border-radius: 20px;
+        padding-left: 0.5rem;
       }
 
       .Resume-Skills-Container {
@@ -78,7 +83,9 @@
       justify-content: space-around;
 
       h3 {
-        background: #1c495f;
+        background: rgb(255 255 255 / 49%);
+        border-radius: 20px;
+        padding-left: 0.5rem;
       }
 
       .Resume-Profile,
@@ -86,6 +93,14 @@
       .Resume-Certificate,
       .Resume-Experience {
         padding: 0.5rem;
+      }
+
+      .Resume-Profile {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+      }
+
+      .Resume-Education {
+        padding: 0.5rem 0 0.5rem 0.5rem;
       }
 
       .Resume-Profile {
@@ -118,14 +133,17 @@
         text-align: center;
         text-indent: 15px;
         background-color: transparent;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid black;
+        color: black;
         margin: 1rem 2rem;
+        font-weight: bolder;
+
       }
 
       .Button-Download:hover {
-        color: #4CC713;
-        border: 1px solid #4CC713;
+        color: black;
+        font-weight: bolder;
+        border: 1px solid black;
       }
 
       .Button-Download:before,
@@ -161,11 +179,11 @@
       }
 
       .Button-Download:hover:before {
-        border-color: #4CC713;
+        border-color: black;
       }
 
       .Button-Download:hover:after {
-        border-top-color: #4CC713;
+        border-top-color: black;
         animation-play-state: running;
       }
 
