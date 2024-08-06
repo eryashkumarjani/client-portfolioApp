@@ -1,4 +1,4 @@
-@use './../variables' as *;
+@use "./../variables" as *;
 
 .Navbar {
   position: fixed;
@@ -7,6 +7,9 @@
   border-radius: 20px;
   padding: 0.5rem;
   box-shadow: $box-shadow;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
   .active {
     color: $text-color !important;
@@ -16,7 +19,7 @@
   }
 
   .Navbar-Text {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: $text-color;
 
     &:hover {
@@ -24,5 +27,14 @@
       font-size: 1.1rem;
       font-weight: bolder;
     }
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
